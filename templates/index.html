@@ -19,6 +19,16 @@
             <th scope="col">Due date</th>
           </tr>
         </thead>
+        <tbody>
+        {% for todo in todos %}
+        <tr>
+          <th scope="row">{{ todo.id }}</th>
+          <td>{{ todo.todo }}</td>
+          <td>{{ todo.created_at }}</td>
+          <td>{{ todo.due_date }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
       </table>
       <div class="container">
         <div class="row">
