@@ -27,7 +27,7 @@
           <td>{{ todo.todo }}</td>
           <td>{{ todo.created_at }}</td>
           <td>{{ todo.due_date }}</td>
-          <td><a href="{{ url_for('delete_todo', todo_id=todo.id) }}">✘</a></td>
+          <td><a href="{{ url_for('delete_todo', todo_id=todo.id) }}">Delete</a></td>
         </tr>
         {% endfor %}
         </tbody>
